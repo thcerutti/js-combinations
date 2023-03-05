@@ -1,0 +1,10 @@
+{
+  "name": "js-combinations",
+  "packageManager": "yarn@3.4.1",
+  "scripts": {
+    "test": "yarn jest"
+  },
+  "devDependencies": {
+    "jest": "^29.4.3"
+  }
+}
