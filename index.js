@@ -1,3 +1,4 @@
+require('dotenv').config()
 const { getMatrixCombinations } = require("./src/combine");
 
 const input = [
