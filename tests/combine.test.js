@@ -1,6 +1,9 @@
-const { combineAllMatrixElements } = require("../src/combine");
+const {
+  combineAllMatrixElements,
+  combineFirstElementWithRandomOthers,
+} = require("../src/combine");
 
-describe("given a `combine` function", () => {
+describe("given a `combineAllMatrixElements` function", () => {
   describe("when received a given matrix", () => {
     it("should create all combinations on simetric matrix", () => {
       const input = [
@@ -24,4 +27,16 @@ describe("given a `combine` function", () => {
       expect(output.length).toBe(expected);
     });
   });
+});
+
+describe("given an `combineFirstElementWithRandomOthers` function", () => {
+  describe('when received three inputs', () => {
+    const input1 = ['a', 'b', 'c']
+    const input2 = ['1', '2', '3', '4', '5']
+    const input3 = ['x', 'y', 'z']
+    it('should return the variations', () => {
+      const outputPath = 'random-output.txt'
+      combineFirstElementWithRandomOthers(input1, input2, input3, outputPath)
+    })
+  })
 });

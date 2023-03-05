@@ -2,7 +2,8 @@
   "name": "js-combinations",
   "packageManager": "yarn@3.4.1",
   "scripts": {
-    "test": "yarn jest"
+    "test": "yarn jest",
+    "run-sample-script": "node ./randomizeFiles ./sampleLists/list1.txt ./sampleLists/list2.txt ./sampleLists/list3.txt ./new-file.txt"
   },
   "dependencies": {
     "dotenv": "^16.0.3",
