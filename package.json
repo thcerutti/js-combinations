@@ -1,7 +1,14 @@
 {
   "name": "js-combinations",
   "packageManager": "yarn@3.4.1",
+  "scripts": {
+    "test": "yarn jest"
+  },
   "dependencies": {
-    "dotenv": "^16.0.3"
+    "dotenv": "^16.0.3",
+    "openai": "^3.2.1"
+  },
+  "devDependencies": {
+    "jest": "^29.4.3"
   }
 }

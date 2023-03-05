@@ -1,4 +1,4 @@
-const { getMatrixCombinations } = require("../src/combine");
+const { combineAllMatrixElements } = require("../src/combine");
 
 describe("given a `combine` function", () => {
   describe("when received a given matrix", () => {
@@ -9,7 +9,7 @@ describe("given a `combine` function", () => {
         ["home", "away", "here"],
       ];
       const expected = Math.pow(input[0].length, input.length);
-      const output = getMatrixCombinations(input);
+      const output = combineAllMatrixElements(input);
       expect(output.length).toBe(expected);
     });
 
@@ -20,7 +20,7 @@ describe("given a `combine` function", () => {
         ["x", "y"],
       ];
       const expected = input[0].length * input[1].length * input[2].length;
-      const output = getMatrixCombinations(input);
+      const output = combineAllMatrixElements(input);
       expect(output.length).toBe(expected);
     });
   });

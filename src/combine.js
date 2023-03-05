@@ -1,10 +1,10 @@
-function getMatrixCombinations(matrix) {
+function combineAllMatrixElements(matrix) {
   if (matrix.length === 0) {
     return [[]];
   }
 
   const [firstRow, ...remainingRows] = matrix;
-  const remainingCombinations = getMatrixCombinations(remainingRows);
+  const remainingCombinations = combineAllMatrixElements(remainingRows);
   const combinations = [];
 
   for (let i = 0; i < firstRow.length; i++) {
@@ -17,5 +17,5 @@ function getMatrixCombinations(matrix) {
 }
 
 module.exports = {
-  getMatrixCombinations,
+  combineAllMatrixElements,
 };

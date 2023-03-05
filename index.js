@@ -1,5 +1,5 @@
-require('dotenv').config()
-const { getMatrixCombinations } = require("./src/combine");
+require("dotenv").config();
+const { combineAllMatrixElements } = require("./src/combine");
 
 const input = [
   ["bird", "dog", "duck"],
@@ -7,4 +7,4 @@ const input = [
   ["home", "away", "here"],
 ];
 
-console.log(getMatrixCombinations(input));
+console.log(combineAllMatrixElements(input));
